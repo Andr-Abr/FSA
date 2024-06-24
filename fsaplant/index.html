@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuelseekauto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar y menú -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo de la aplicación" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer-section">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cuenta-section">Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Imagen de inicio -->
+    <div class="container-fluid p-0">
+        <img src="img/fondo.jpg" class="img-fluid" alt="fondoimagen" style="object-fit: cover; width: 100%; height: 65vh;">
+    </div>    
+
+    <!-- Sección Inicio -->
+    <section class="colored-section py-5 text-left text-light" style="background-color: #000000;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="#vehicle-list" class="btn btn-dark" style="margin-right: 10px;">Buscar por Vehículo</a>
+                    <a href="#busqueda-avanzada" class="btn btn-dark" style="margin-right: 10px;">Búsqueda Avanzada</a>
+                    <a href="#comparar" class="btn btn-dark">Comparar</a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-auto">
+                    <select class="form-select">
+                        <option selected>Marca</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select">
+                        <option selected>Modelo</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select">
+                        <option selected>Año</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-auto">
+                    <button class="btn btn-warning">Buscar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Lista de Vehículos -->
+    <section id="vehicle-list" class="vehicle-list">
+        <div class="container">
+            <h2 class="text-center"><a href="#lista-de-vehiculos"></a><strong>Lista de Vehículos</strong></h2>
+            <img src="img/search.png" class="img-fluid d-block mx-auto" alt="search" style="height: 350px;">
+        </div>
+    </section>
+
+    <!-- Sección de Búsqueda Avanzada -->
+    <section id="busqueda-avanzada" class="advanced-search py-5" style="background-image: url('img/searchad.png'); background-size: cover; background-position: center;">
+        <h2 class="text-center"><strong>Búsqueda Avanzada</strong></h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row g-3 ml-3 mt-4">
+                <div class="col-auto">
+                    <select class="form-select form-select-lg mb-2">
+                        <option selected>Marca</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select form-select-lg mb-2">
+                        <option selected>Modelo</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select form-select-lg mb-2">
+                        <option selected>Año</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row g-3 ml-3 mt-4">
+                <div class="col-auto">
+                    <select class="form-select form-select-lg mb-2">
+                        <option selected>Tipo de carrocería</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select form-select-lg mb-2">
+                        <option selected>Tipo de combustible</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <select class="form-select form-select-lg mb-2">
+                        <option selected>Tipo de tracción</option>
+                        <option value="1">---</option>
+                        <option value="2">---</option>
+                        <option value="3">---</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row g-3 ml-3 mt-4">
+                <div class="col-auto">
+                    <label for="consumo" class="form-label"><strong>Consumo Km/L</strong></label>
+                    <input type="range" class="form-range" id="consumo" name="consumo" min="0" max="100">
+                </div>
+            </div>
+            <div class="row g-3 ml-3 mt-4">
+                <div class="col-auto">
+                    <button class="btn btn-warning w-100" type="submit">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Sección de Comparar -->
+    <section id="comparar" class="compare py-5" style="background-image: url('img/vs.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h2 class="text-center"><strong>Comparar</strong></h2>
+            <br>
+            <br>
+            <div class="row compare-content">
+                <div class="col-lg-7 compare-column mb-4">
+                    <div class="search-box mb-3" style="width: 278px;">
+                        <input type="text" class="form-control" placeholder="Seleccionar vehículo">
+                    </div>
+                    <div class="card" style="width: 278px; height: 100px;"> 
+                        <img src="..." class="card-img-top" alt="Imagen 1">
+                    </div>
+                </div>
+                <div class="col-lg-5 compare-column mb-4">
+                    <div class="search-box mb-3" style="width: 278px;">
+                        <input type="text" class="form-control" placeholder="Seleccionar vehículo">
+                    </div>
+                    <div class="card" style="width: 278px; height: 100px;">
+                        <img src="..." class="card-img-top" alt="Imagen 2">                      
+                    </div>
+                </div>
+            </div>
+            <div class="row compare-table">
+                <div class="col-lg-7 compare-column mb-4">
+                    <h4 class="text-dark"><strong>Características Vehículo 1</strong></h4>
+                    <ul class="list-unstyled">
+                        <li>Marca: <span class="marca">---</span></li>
+                        <li>Modelo: <span class="modelo">---</span></li>
+                        <li>Generación: <span class="generacion">---</span></li>
+                        <li>Modificación (motor): <span class="modificacion">---</span></li>
+                        <li>Año: <span class="año">---</span></li>
+                        <li>Tipo de carrocería: <span class="carroceria">---</span></li>
+                        <li>Número de Plazas: <span class="plazas">---</span></li>
+                        <li>Consumo urbano: <span class="consumo-urbano">---</span></li>
+                        <li>Consumo extraurbano: <span class="consumo-extraurbano">---</span></li>
+                        <li>Consumo combinado: <span class="consumo-combinado">---</span></li>                        
+                        <li>Tipo de combustible: <span class="combustible">---</span></li>
+                        <li>Tipo de tracción: <span class="traccion">---</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 compare-column mb-4">
+                    <h4 class="text-dark"><strong>Características Vehículo 2</strong></h4>
+                    <ul class="list-unstyled">
+                        <li>Marca: <span class="marca">---</span></li>
+                        <li>Modelo: <span class="modelo">---</span></li>
+                        <li>Generación: <span class="generacion">---</span></li>
+                        <li>Modificación (motor): <span class="modificacion">---</span></li>
+                        <li>Año: <span class="año">---</span></li>
+                        <li>Tipo de carrocería: <span class="carroceria">---</span></li>
+                        <li>Número de Plazas: <span class="plazas">---</span></li>
+                        <li>Consumo urbano: <span class="consumo-urbano">---</span></li>
+                        <li>Consumo extraurbano: <span class="consumo-extraurbano">---</span></li>
+                        <li>Consumo combinado: <span class="consumo-combinado">---</span></li>                        
+                        <li>Tipo de combustible: <span class="combustible">---</span></li>
+                        <li>Tipo de tracción: <span class="traccion">---</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de Cuenta -->
+<section id="cuenta-section" class="account-section py-5 text-dark" style="background-color: #434242;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="bg-white p-4 rounded shadow">
+                    <h2 class="text-center mb-4"><strong>Inicio de sesión</strong></h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-2">
+                            <div class="col">
+                                <input type="email" class="form-control" id="email" required placeholder="Email">
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese un email válido.
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input type="password" class="form-control" id="password" required placeholder="Password">
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese una contraseña.
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary w-100" data-toggle="modal" data-target="#loginModal">Iniciar sesión</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-warning w-100" data-toggle="popover" data-content="Crear Cuenta" data-placement="top" onclick="window.location.href='#registrarse'">Registrarse</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Inicio de Sesión -->
+<div class="container">
+ <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Inicio de sesión exitoso.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+ </div>    
+</div>
+
+<!-- Sección de Cuenta -->
+<section id="registrarse" class="account-section py-5 text-dark" style="background-color: #434242;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="bg-white p-4 rounded shadow">
+                 <div class="account-container">
+                    <h2 class="text-center mb-4"><strong>Registrarse</strong></h2>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="nombres" required placeholder="Nombres">
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese sus nombres.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="apellidos" required placeholder="Apellidos">
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese sus apellidos.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <select class="form-select" id="sexo" required>
+                                    <option selected disabled value="">Sexo</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="masculino">Masculino</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, seleccione su sexo.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex align-items-center">
+                                    <input type="date" class="form-control" id="fecha-nacimiento">
+                                    <label for="fecha-nacimiento" class="ms-2">Fecha de nacimiento</label>
+                                </div>                                
+                                <div class="invalid-feedback">
+                                    Por favor, seleccione su fecha de nacimiento.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>País</option>
+                                    <option>Colombia</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, seleccione su País.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>Departamento</option>
+                                    <option>Amazonas</option>
+                                    <option>Antioquia</option>
+                                    <option>Arauca</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, seleccione su Departamento
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>Ciudad</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, seleccione su Ciudad.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-2">
+                            <div class="col-md-2">
+                                <input type="email" class="form-control" id="email" required placeholder="Email">
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese un email válido.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" id="cedula" required placeholder="Cédula">
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese su cédula.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="password" class="form-control" id="password" required placeholder="Contraseña">
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese una contraseña.
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="password" class="form-control" id="repetir-password" required placeholder="Repetir Contraseña">
+                                <div class="invalid-feedback">
+                                    Por favor, repita su contraseña.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-warning w-100" data-toggle="modal" data-target="#registerModal">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Registro -->
+<div class="container">
+ <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Registro Exitoso</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Usted se ha registrado exitosamente.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+ </div>   
+</div>
+
+<!-- Footer -->
+<footer id="footer-section" class="footer-section bg-dark text-light py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+                <img src="img/logo.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+            </div>
+            <!-- Links -->
+            <div class="col-md-6 text-center mb-3 mb-md-0">
+                <a href="#" class="text-light text-decoration-none me-3">© 2024</a>
+                <a href="#" class="text-light text-decoration-none me-3">T&Cs</a>
+                <a href="#" class="text-light text-decoration-none">Privacidad</a>
+            </div>
+            <!-- Subscribe -->
+            <div class="col-md-3 text-center text-md-end mb-3 mb-md-0">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ingrese su Email">
+                    <button class="btn btn-light" type="button">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center mt-3">
+            <!-- Social Media Icons -->
+            <div class="col text-center">
+                <a href="#" class="text-light me-3"><img src="img/facebook.png" alt="Facebook" class="img-fluid" style="max-width: 30px;"></a>
+                <a href="#" class="text-light me-3"><img src="img/instagram.png" alt="Instagram" class="img-fluid" style="max-width: 30px;"></a>
+                <a href="#" class="text-light"><img src="img/twitter.png" alt="Twitter" class="img-fluid" style="max-width: 30px;"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qz1IHFQ0m5FeEnzqgrO4Smxdkk4ckvpVDf+Bd2XlIY8aoOD8jguEQ3aPBTJ7tUcr" crossorigin="anonymous"></script>
+<script src="eventos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de imagen de fondo inicial */
+.wide-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo de secciones con fondo de color */
+.colored-section {
+    background-color: #f0f0f0;
+}
+
+/* Estilo de las filas de botones */
+.buttons-row .btn {
+    margin-bottom: 10px;
+}
+
+/* Estilo de cajas de selección en la búsqueda */
+.search-boxes .custom-select {
+    margin-bottom: 10px;
+}
+
+/* Estilo de sección de lista de vehículos */
+.vehicle-list {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* Estilo de sección de búsqueda avanzada */
+.advanced-search {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+}
+
+/* Estilo del contenedor del slider */
+.slider-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo de sección de comparación */
+.compare {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.compare .form-control {
+    margin-bottom: 10px;
+}
+
+.compare .image-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.compare .image-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo de pie de página */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
